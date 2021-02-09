@@ -62,7 +62,7 @@ function reducer(state: State, action: Action): State {
 export function SampleProvider({ children }: { children: React.ReactNode }) {
   const [state, dispatch] = useReducer(reducer, {
     count: 0,
-    text: 'hello',
+    text: '',
     color: 'red',
     isGood: true,
   });

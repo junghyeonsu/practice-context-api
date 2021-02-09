@@ -1,10 +1,12 @@
 import React from 'react';
-import Child from 'components/Child';
+import ChildContextAPI from 'components/ChildContextAPI';
+import ChildContextAPITodo from 'components/ChildContextAPITodo';
 
 const Parent = () => {
   return (
     <div>
-      <Child />
+      {/* <ChildContextAPI /> */}
+      <ChildContextAPITodo />
     </div>
   );
 };
