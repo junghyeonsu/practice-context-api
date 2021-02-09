@@ -1,7 +1,7 @@
 import React from 'react';
 import Child from 'components/Child';
 
-const Parent: React.FC = () => {
+const Parent = () => {
   return (
     <div>
       <Child />
