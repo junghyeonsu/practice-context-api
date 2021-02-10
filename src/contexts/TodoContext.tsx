@@ -61,17 +61,17 @@ export function TodoContextProvider({
     {
       id: 1,
       text: 'Context API 배우기',
-      done: true,
+      done: false,
     },
     {
       id: 2,
-      text: 'Context API 배우기',
-      done: true,
+      text: 'TypeScript 배우기',
+      done: false,
     },
     {
       id: 3,
-      text: 'Context API 배우기',
-      done: true,
+      text: 'TypeScript 와 Context API 함께 사용하기',
+      done: false,
     },
   ]);
 

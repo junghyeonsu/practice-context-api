@@ -59,7 +59,11 @@ function reducer(state: State, action: Action): State {
 
 // SampleProvider 에서 useReduer를 사용하고
 // SampleStateContext.Provider 와 SampleDispatchContext.Provider 로 children 을 감싸서 반환합니다.
-export function SampleProvider({ children }: { children: React.ReactNode }) {
+export function SampleContextProvider({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const [state, dispatch] = useReducer(reducer, {
     count: 0,
     text: '',
