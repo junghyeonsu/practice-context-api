@@ -21,9 +21,7 @@ function TestComponent() {
       {/* 우리가 선언한 count state를 표시해준다.  */}
       {count}
 
-      <TestChildComponent count={count}>
-        <p>요기는 children 이름으로 전달될거야!</p>
-      </TestChildComponent>
+      {count > 5 ? <div>5가 넘었다!</div> : <div>5를 못넘었어...</div>}
 
       {/* UP 버튼과 DOWN 버튼을 생성해서 onClick 함수를 전달해준다. */}
       <button onClick={onClickUpCount}>UP</button>
